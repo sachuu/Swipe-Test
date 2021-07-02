@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,15 +11,23 @@
 		6031493A2687F6A500D7DD85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603149392687F6A500D7DD85 /* ContentView.swift */; };
 		6031493C2687F6A600D7DD85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6031493B2687F6A600D7DD85 /* Assets.xcassets */; };
 		6031493F2687F6A600D7DD85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6031493E2687F6A600D7DD85 /* Preview Assets.xcassets */; };
+		603149472688328900D7DD85 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603149462688328900D7DD85 /* Card.swift */; };
+		60B331EF268FC3E6007313A6 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B331EE268FC3E6007313A6 /* MainMenu.swift */; };
+		DC4C87C50565425991121B40 /* Pods_MoMemory_Photo_Gallery_Cleaner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B25734B944260E198E41B3F /* Pods_MoMemory_Photo_Gallery_Cleaner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35967FC4D65D4C78674593AC /* Pods-MoMemory Photo Gallery Cleaner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoMemory Photo Gallery Cleaner.release.xcconfig"; path = "Target Support Files/Pods-MoMemory Photo Gallery Cleaner/Pods-MoMemory Photo Gallery Cleaner.release.xcconfig"; sourceTree = "<group>"; };
 		603149342687F6A500D7DD85 /* MoMemory Photo Gallery Cleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MoMemory Photo Gallery Cleaner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		603149372687F6A500D7DD85 /* MoMemory_Photo_Gallery_CleanerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoMemory_Photo_Gallery_CleanerApp.swift; sourceTree = "<group>"; };
 		603149392687F6A500D7DD85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6031493B2687F6A600D7DD85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6031493E2687F6A600D7DD85 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		603149402687F6A600D7DD85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		603149462688328900D7DD85 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		60B331EE268FC3E6007313A6 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		8B25734B944260E198E41B3F /* Pods_MoMemory_Photo_Gallery_Cleaner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoMemory_Photo_Gallery_Cleaner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F772BB0C60FD6BB4794AA739 /* Pods-MoMemory Photo Gallery Cleaner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoMemory Photo Gallery Cleaner.debug.xcconfig"; path = "Target Support Files/Pods-MoMemory Photo Gallery Cleaner/Pods-MoMemory Photo Gallery Cleaner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4C87C50565425991121B40 /* Pods_MoMemory_Photo_Gallery_Cleaner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1608A3CFFBC2DAF20351B928 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B25734B944260E198E41B3F /* Pods_MoMemory_Photo_Gallery_Cleaner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3ECD588D0A23F1650631BAAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F772BB0C60FD6BB4794AA739 /* Pods-MoMemory Photo Gallery Cleaner.debug.xcconfig */,
+				35967FC4D65D4C78674593AC /* Pods-MoMemory Photo Gallery Cleaner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6031492B2687F6A500D7DD85 = {
 			isa = PBXGroup;
 			children = (
 				603149362687F6A500D7DD85 /* MoMemory Photo Gallery Cleaner */,
 				603149352687F6A500D7DD85 /* Products */,
+				3ECD588D0A23F1650631BAAE /* Pods */,
+				1608A3CFFBC2DAF20351B928 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +82,8 @@
 			children = (
 				603149372687F6A500D7DD85 /* MoMemory_Photo_Gallery_CleanerApp.swift */,
 				603149392687F6A500D7DD85 /* ContentView.swift */,
+				60B331EE268FC3E6007313A6 /* MainMenu.swift */,
+				603149462688328900D7DD85 /* Card.swift */,
 				6031493B2687F6A600D7DD85 /* Assets.xcassets */,
 				603149402687F6A600D7DD85 /* Info.plist */,
 				6031493D2687F6A600D7DD85 /* Preview Content */,
@@ -76,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 603149432687F6A600D7DD85 /* Build configuration list for PBXNativeTarget "MoMemory Photo Gallery Cleaner" */;
 			buildPhases = (
+				530AE65F347DC5DA65C09EE4 /* [CP] Check Pods Manifest.lock */,
 				603149302687F6A500D7DD85 /* Sources */,
 				603149312687F6A500D7DD85 /* Frameworks */,
 				603149322687F6A500D7DD85 /* Resources */,
+				E1A23104B6C73499E873E3AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +165,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		530AE65F347DC5DA65C09EE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoMemory Photo Gallery Cleaner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1A23104B6C73499E873E3AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoMemory Photo Gallery Cleaner/Pods-MoMemory Photo Gallery Cleaner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoMemory Photo Gallery Cleaner/Pods-MoMemory Photo Gallery Cleaner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoMemory Photo Gallery Cleaner/Pods-MoMemory Photo Gallery Cleaner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		603149302687F6A500D7DD85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6031493A2687F6A500D7DD85 /* ContentView.swift in Sources */,
+				603149472688328900D7DD85 /* Card.swift in Sources */,
 				603149382687F6A500D7DD85 /* MoMemory_Photo_Gallery_CleanerApp.swift in Sources */,
+				60B331EF268FC3E6007313A6 /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +340,7 @@
 		};
 		603149442687F6A600D7DD85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F772BB0C60FD6BB4794AA739 /* Pods-MoMemory Photo Gallery Cleaner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -277,15 +354,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SVNStudios.MoMemory-Photo-Gallery-Cleaner";
+				PRODUCT_BUNDLE_IDENTIFIER = "SVNStudios.MoMemory-Cleaner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		603149452687F6A600D7DD85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35967FC4D65D4C78674593AC /* Pods-MoMemory Photo Gallery Cleaner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,10 +377,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SVNStudios.MoMemory-Photo-Gallery-Cleaner";
+				PRODUCT_BUNDLE_IDENTIFIER = "SVNStudios.MoMemory-Cleaner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
