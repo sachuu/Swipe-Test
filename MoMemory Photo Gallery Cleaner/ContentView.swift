@@ -5,6 +5,7 @@
 //  Created by Sachintha Herath on 2021-06-26.
 //
 
+import Photos
 import SwiftUI
 
 struct ContentView: View {
@@ -42,7 +43,9 @@ struct ContentView: View {
                 Button(action:{}){
                     Image("super_like")
                 }
-                Button(action:{}){
+                Button(action:{
+                    print(images[0]);
+                }){
                     Image("like")
                 }
                 Button(action:{}){
@@ -59,13 +62,24 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+func getAssetThumbnail(asset: PHAsset) -> UIImage {
+    let manager = PHImageManager.default()
+    let option = PHImageRequestOptions()
+    var thumbnail = UIImage()
+    option.isSynchronous = true
+    manager.requestImage(for: asset, targetSize: CGSize(width: 100, height: 100), contentMode: .aspectFit, options: option, resultHandler: {(result, info)->Void in
+        thumbnail = result!
+    })
+    return thumbnail
+}
+
 //Card Structure
 struct CardView: View{
     @State var card: Card
     let cardGradient = Gradient(colors: [Color.black.opacity(0), Color.black.opacity(0.5)])
     var body: some View{
         ZStack(alignment: .leading){
-            Image(card.imageName).resizable().padding(8)
+            Image(uiImage: getAssetThumbnail(asset: images[0])).resizable().padding(8)
             LinearGradient(gradient: cardGradient, startPoint: .top, endPoint: .bottom)
             
             HStack {

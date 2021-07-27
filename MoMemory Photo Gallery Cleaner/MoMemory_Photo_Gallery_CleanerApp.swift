@@ -26,7 +26,7 @@ func getImages() {
 struct MoMemory_Photo_Gallery_CleanerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView().onAppear(){
+            MainMenuView().onAppear(){
                 getImages()
                 print(images[0])
             }
