@@ -27,8 +27,9 @@ struct MoMemory_Photo_Gallery_CleanerApp: App {
     var body: some Scene {
         WindowGroup {
             MainMenuView().onAppear(){
-                getImages()
-                print(images[0])
+                PHPhotoLibrary.requestAuthorization { (status) in
+                    getImages()
+                }
             }
         }
     }
