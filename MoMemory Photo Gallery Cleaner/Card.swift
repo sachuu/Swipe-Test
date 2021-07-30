@@ -19,11 +19,6 @@ struct Card: Identifiable {
     static var data: [Card] {
         [
             Card(imageName: "p0"),
-            Card(imageName: "p1"),
-            Card(imageName: "p2"),
-            Card(imageName: "p3"),
-            Card(imageName: "p4"),
-            Card(imageName: "p5"),
         ]
     }
     
